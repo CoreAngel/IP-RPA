@@ -1,0 +1,156 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ex5_2_3" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="907.2,1373.6" sap2010:WorkflowViewState.IdRef="ex5_2_3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ex5_2_3" sap:VirtualizedContainerService.HintSize="660.8,1208.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="image" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ImageFound DisplayName="Image Exists 'chrome.exe  Google'" Found="[image]" sap:VirtualizedContainerService.HintSize="619.2,107.2" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+      <ui:ImageFound.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+      </ui:ImageFound.Image>
+      <ui:ImageFound.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='Google' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ImageFound.Target>
+    </ui:ImageFound>
+    <If Condition="[image = True]" sap:VirtualizedContainerService.HintSize="619.2,968.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Native Citrix" sap:VirtualizedContainerService.HintSize="475.2,819.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Google Page'" sap:VirtualizedContainerService.HintSize="433.6,726.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="7ded9326e028d0571fac626b1b80155c" Selector="&lt;html app='chrome.exe' title='Google' /&gt;">
+            <ui:BrowserScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,579.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'DIV  viewport'" sap:VirtualizedContainerService.HintSize="333.6,202.4" sap2010:WorkflowViewState.IdRef="ClickOCRText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="Szukaj w Google">
+                    <ui:ClickOCRText.CursorPosition>
+                      <ui:CursorPosition OffsetX="-203" OffsetY="-59" Position="Center" />
+                    </ui:ClickOCRText.CursorPosition>
+                    <ui:ClickOCRText.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                        <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="Polish" Profile="Screen" Scale="1" />
+                      </ActivityFunc>
+                    </ui:ClickOCRText.OCREngine>
+                    <ui:ClickOCRText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="12f81c5876cd0abbbdbefb74019b6c44" Selector="&lt;webctrl id='viewport' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:ClickOCRText.Target>
+                  </ui:ClickOCRText>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="local weather">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe  Google'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:ClickImage.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:ClickImage.CursorPosition>
+                    <ui:ClickImage.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+                    </ui:ClickImage.Image>
+                    <ui:ClickImage.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:ClickImage.Target>
+                  </ui:ClickImage>
+                </Sequence>
+              </ActivityAction>
+            </ui:BrowserScope.Body>
+          </ui:BrowserScope>
+        </Sequence>
+      </If.Then>
+    </If>
+  </Sequence>
+</Activity>
